@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 
 public class Zadanie_2 {
-
+//symulator lotto
 	public static void main(String[] args) {
 
 		Integer[] arr = new Integer[49];

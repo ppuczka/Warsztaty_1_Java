@@ -4,7 +4,7 @@ import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
-// gra w Zgadywanie liczb
+// gra w Zgadywanie liczb - użytkownik zgaduje liczbę wylosowaną przez komputer
 public class Zadanie_1 {
 
 	public static void main(String[] args) {
