@@ -22,32 +22,32 @@ public class Zadanie_3 {
         Scanner scanner = new Scanner(System.in);
         ArrayList<Integer> nums = new ArrayList<Integer>();
 
-            while (!corret.equals(answer) || nums.contains(guess)) {
-                guess = ((max - min)/2) + min;
-                System.out.println("Zgaduję: " + guess + " więcej? / mniej?  / trafiłeś?");
-                answer = scanner.next();
+        while (!corret.equals(answer) || nums.contains(guess)) {
+            guess = ((max - min) / 2) + min;
+            System.out.println("Zgaduję: " + guess + " więcej? / mniej?  / trafiłeś?");
+            answer = scanner.next();
 
 
-                if (nums.contains(guess)) {
-                    System.out.println("Nie oszukuj");
-                }
-                if (corret.equals(answer)) {
-                    System.out.println("Wygrałem w " + countGuess + " próbach");
-                    countGuess = countGuess + 1;
-                    break;
+            if (nums.contains(guess)) {
+                System.out.println("Nie oszukuj");
+            }
+            if (corret.equals(answer)) {
+                System.out.println("Wygrałem w " + countGuess + " próbach");
+                countGuess = countGuess + 1;
+                break;
 
-                } else if (more.equals(answer))  {
-                        min = guess;
-                        countGuess = countGuess + 1;
-                        nums.add(guess);
-                } else if (less.equals(answer))  {
-                        max  = guess;
-                        countGuess = countGuess + 1;
-                        nums.add(guess);
-                }
+            } else if (more.equals(answer)) {
+                min = guess;
+                countGuess = countGuess + 1;
+                nums.add(guess);
+            } else if (less.equals(answer)) {
+                max = guess;
+                countGuess = countGuess + 1;
+                nums.add(guess);
+            }
 
 
-                }
+        }
 
     }
 }
